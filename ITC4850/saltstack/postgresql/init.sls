@@ -1,4 +1,4 @@
-{% from 'saltstack/openfire/vars.j2' import openfire with context %}
+{% from 'saltstack/postgresql/vars.j2' import postgres with context %}
 include:
 {% if grains['os'] == 'Ubuntu' %}
   - .install
